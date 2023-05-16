@@ -40,6 +40,7 @@ function minScripts() {
 }
 
 gulp.task('build', gulp.series(cleanDist, gulp.parallel(compileStyles, minImages, minScripts)));
+
 gulp.task('dev', gulp.series('build', function () {
 
   browserSync.init({
@@ -48,10 +49,8 @@ gulp.task('dev', gulp.series('build', function () {
     }
   });
 
-  gulp.watch('src/img/*', minImages);
-  gulp.watch('src/scss/*.scss', compileStyles);
-  gulp.watch('src/js/*.js', minScripts);
-
-  gulp.watch('dist/**/*').on('change', browserSync.reload);
-  gulp.watch('./*.html').on('change', browserSync.reload);
-}));
+  gulp.watch("./**/*", gulp.series(cleanDist, gulp.parallel(compileStyles, minImages, minScripts), (next) => {
+    browserSync.reload();
+    next();
+  }))
+}))
