@@ -1,2 +1,10 @@
-@import "abstracts/abstracts";
-@import "layout/layout";
+@import "./abstracts/reset";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./layout/header";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    height: 100%;
+}
