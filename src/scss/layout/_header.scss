@@ -1,6 +1,7 @@
 .header {
     background-color: black; 
     position: relative;
+    min-width: 320px;
 }
 .header__body {
     @include flex-row;

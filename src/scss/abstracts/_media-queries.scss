@@ -66,6 +66,37 @@
     .header__btn--secondary {
         width: 400px; 
     }
+
+    
+    .container {
+        width: 90%;
+    }
+
+    .editor__section-editor {
+        margin-top: 158px;
+        margin-bottom: 160px;
+    }
+
+    .editor {
+
+        &__title {
+            font-size: 42px;
+            line-height: 42px;
+        }
+
+        &__text {
+            margin-bottom: 30px;
+            font-size: 21px;
+            line-height: 29px;
+        }
+
+    }
+
+    .editor-list {
+        &__last-item {
+            margin-top: 0;
+        }
+    }
 }
 
 @media (min-width: $desktop) {
@@ -156,6 +187,31 @@
         &:hover {
             color: rgba(141, 129, 172, 1);
             background-color: white; 
+        }
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .editor__section-editor {
+        margin-top: 129px;
+        margin-bottom: 70px;
+    }
+
+    .editor {
+
+        &__title {
+            font-size: 54px;
+            line-height: 54px;
+        }
+
+        &__text {
+            margin-top: 35px;
+            margin-bottom: 25px;
+            width: 91%;
+            max-width: 861px;
+            @include center;
         }
     }
 }
