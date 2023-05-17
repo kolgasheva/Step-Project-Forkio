@@ -49,6 +49,10 @@
 
 @media (min-width: 993px) {
 
+    .container {
+        width: 80%;
+    }
+
     .editor__section-editor {
         margin-top: 66px;
         margin-bottom: 70px;
@@ -63,7 +67,10 @@
 
         &__text {
             margin-top: 35px;
-            margin-bottom: 13px;
+            margin-bottom: 25px;
+            width: 91%;
+            max-width: 861px;
+            @include center;
         }
 
     }
