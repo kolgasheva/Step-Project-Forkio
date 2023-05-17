@@ -34,9 +34,8 @@
     }
     .header__list {
         @include flex-row;
-        justify-content: center;
+        justify-content: space-evenly;
         padding-top: 20px;
-        gap: 25px;
     }
     .header__item {
         border: none;
@@ -76,10 +75,12 @@
         margin: 0 auto;
     }
     .header__body {
-        justify-content:center;
+        justify-content:space-between;
         align-items: center;
         background-color: black;
-
+        &:last-child {
+            flex-basis: content;
+        }
         &:hover {
             color: white;
         }
@@ -118,6 +119,9 @@
     }
     .header__menu {
         flex-basis:auto;
+    }
+    .header__menu {
+        flex-basis: content;
     }
     .header__list {
         padding-top: 0;

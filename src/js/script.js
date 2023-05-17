@@ -1,7 +1,8 @@
 $(document).ready(function(){
-    $('.header__burger').click(function(event){
+    $('.header__burger, burger__bar').click(function(event){
       $('.header__burger,.header__menu, .header__list').toggleClass('active')
     })
+
 })
 
 $(document).on("click", function(event){
