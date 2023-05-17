@@ -1,0 +1,203 @@
+.header {
+    background-color: black; 
+    position: relative;
+}
+.header__body {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10px;
+    position: relative;
+    background-color: rgba(39, 38, 42, 1); 
+
+    &:last-child {
+        flex-basis: 100%;
+    }
+}
+.logo-hover {
+    display: none;
+}
+.header__logo-img {
+    display: block;
+    width: 43px;
+    height: 43px;
+}
+.logo-title {
+    display: none; 
+}
+.header__cta-btn {
+    display: block;
+    background-color: rgba(141, 129, 172, 1);
+    border: 1px solid rgba(141, 129, 172, 1);
+    padding: 11px 26px;
+    border-radius: 40px;
+    color: white;
+    font-weight: 700;
+    @include text-transform;
+}
+
+.header__burger {
+    width: 30px;
+    height: 45px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+.header__burger span {
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+.header__burger span:nth-child(1) {
+    top: 10px;
+    transform-origin: left center;
+    width: 55%;
+    left: 14px;
+  }
+  
+  .header__burger span:nth-child(2) {
+    top: 20px;
+    transform-origin: left center;
+  }
+  
+  .header__burger span:nth-child(3) {
+    top: 30px;
+    transform-origin: left center;
+  }
+  
+  .header__burger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+    left: 2px;
+    width: 100%;
+  }
+  
+  .header__burger.active span:nth-child(2) {
+    transform: scale(0);
+  }
+  
+  .header__burger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 30px;
+    left: 2px;
+  }
+.header__menu {
+    visibility: hidden;
+    position: absolute;
+    &.active {
+        visibility: visible;
+        top: 0;
+        right: 0;
+    }
+}
+.header__list {
+    display: none;
+    &.active {
+        display: block;
+        position: absolute;
+        top: 92px;
+        right: 15px;
+    }
+}
+.header__item {
+    border-bottom: 2px solid rgba(59, 59, 59, 1);
+}
+.header__link {
+    display: block;
+    min-width: 290px;
+    margin: 0 auto;
+    padding: 38px 48px 38px 38px;
+    color: white;
+    font-size: 26px; 
+    line-height: 26px; 
+    background-color: rgba(51, 51, 51, 1);
+    position: relative;
+    @include text-transform;
+    text-transform: capitalize;
+
+    &.active {
+        color: rgba(141, 129, 172, 1);
+        &::before {
+            content: '';
+            background-color: rgba(141, 129, 172, 1);
+            width: 8px;
+            height: 53px;
+            position: absolute;
+            left: 0;
+            top: 25px;
+        }
+    }
+}
+
+//hero section 
+
+.header__hero-section {
+    background-image: url("../img/img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    min-height: 550px;
+}
+.header__title {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+    
+}
+.header__description {
+    color: rgba(141, 129, 172, 1);
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    padding: 20px;
+    min-width: 250px;
+    text-transform: capitalize;
+}
+.header__extra-info {
+    color: rgba(132, 142, 151, 1);
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.header__btn--download {
+    @include flex-column;
+    justify-content: center;
+    position: absolute;
+    bottom: -75px;
+    left: 20px;
+    right: 20px;
+
+}
+.header__btn--secondary {
+    display: block;
+    background-color: rgba(141, 129, 172, 1);
+    padding: 15px 25px;
+    border-radius: 40px;
+    border: 1px solid rgba(141, 129, 172, 1);
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    margin: auto;
+    @include text-transform;
+    text-transform: capitalize;
+}
+.header__btn--download-info {
+    text-align: center;
+    color: rgba(132, 142, 151, 1);
+    padding: 20px 0;
+}

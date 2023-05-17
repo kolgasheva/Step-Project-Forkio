@@ -1,3 +1,15 @@
+@mixin flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+@mixin flex-column {
+    display: flex;
+    flex-flow: column wrap;
+}
+@mixin text-transform {
+    text-decoration: none;
+    text-transform: uppercase;
+}
 @mixin center {
     margin-left: auto;
     margin-right: auto;
