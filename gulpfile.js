@@ -49,8 +49,9 @@ gulp.task('dev', gulp.series('build', function () {
     }
   });
 
-  gulp.watch("./**/*", gulp.series(cleanDist, gulp.parallel(compileStyles, minImages, minScripts), (next) => {
-    browserSync.reload();
-    next();
-  }))
+  gulp.watch('./src/scss/**/*.scss', compileStyles).on('change', browserSync.reload);
+
+  gulp.watch('./src/js/*.js', minScripts).on('change', browserSync.reload);
+
+  gulp.watch('./src/img/*.png', minImages).on('change', browserSync.reload);
 }))
