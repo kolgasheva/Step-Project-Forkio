@@ -54,4 +54,6 @@ gulp.task('dev', gulp.series('build', function () {
   gulp.watch('./src/js/*.js', minScripts).on('change', browserSync.reload);
 
   gulp.watch('./src/img/*.png', minImages).on('change', browserSync.reload);
+
+  gulp.watch('./*.html').on('change', browserSync.reload);
 }))
