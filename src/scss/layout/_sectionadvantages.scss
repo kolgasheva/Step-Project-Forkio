@@ -19,12 +19,22 @@
 }
 
 .container-benefits {
+
     width: 85%;
     @include center;
-    text-align: center;
-    @include flex-column;
-    margin-bottom: 40px;
     padding: 0 10px;
+
+    &__item {
+        text-align: center;
+        @include flex-column;
+        margin-bottom: 40px;
+    }
+
+    &__item:last-child{
+        margin-bottom: 0;
+    }
+
+
 
     //margin-bottom: 64px;
 
