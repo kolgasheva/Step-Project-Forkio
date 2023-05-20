@@ -98,24 +98,19 @@
         }
     }
     .advantages__title {
-        width: 90%;
         font-size: 42px;
         line-height: 44px;
         margin-bottom: 50px;
     }
 
     .container-benefits {
-        width: 90%;
-        @include center;
 
         &__item {
             display: grid;
-            grid-template-columns: 110px 23px 81.15%;
+            grid-template-columns: 110px 23px 1fr;
             margin-bottom: 60px;
         }
 
-
-    
         &__wrapper-img {
             width: 111px;
             margin-bottom: 0;  
@@ -124,24 +119,23 @@
 
         &__description {
             text-align: left;
-           grid-column: 3;
+            grid-column: 3;
+            width: 100%;
         }
 
         &__text {
-            line-height: 19px;
-            width: 84%;
+           font-family: $font-Montserrat;
+            margin-right: 0;
+            width: 100%;
         }
     }
 
     .advantages__wrapper-img {
         margin-top: 76px;
-        overflow-x: visible;
     }
     
     .advantages__img {
-        width: 100%;
-        position:relative;
-        right: 0;
+        width: 100vw;
     }
 
 }
@@ -272,26 +266,17 @@
         background-color: #F4F4F4;
         padding-top: 94px;
         padding-bottom: 33px;
-        height: auto;
-        overflow-x: hidden;
-       // position: relative;
 
     }
 
     .container-advantages {
-        width: 80%;
-       @include center;
-       padding: 0 10px;
         display: grid;
-        grid-template-columns: 45% 50px 55%; 
+        grid-template-columns: 44% 50px 51.25%; 
         grid-template-rows: max-content 1fr;
     }
 
     .advantages__title {
         width: 100%;
-        padding: 0;
-        margin-right: 0;
-        margin-left: 0;
         grid-column: 3 ;
         grid-row: 1/ 2;
         font-size: 48px;
@@ -310,7 +295,7 @@
     }
 
    &__text {
-        width: 90%;
+        width: 100%;
         line-height: 21px;
     }
 }
@@ -319,15 +304,15 @@
     margin-top: 0;
     grid-column: 3;
     grid-row: 2/ 4;
-    position: relative;
-    overflow-x: visible;
-   height: auto;
+    //height: auto;
+    display: flex;
+    align-items: center;
 }
 
 .advantages__img {
-    width: 50vw;
-    min-height: 63%;
+    max-width: 615px;
+    width: auto;
+   // min-height: 90%;
     left: 0;
-    overflow: auto;
 }
 }
