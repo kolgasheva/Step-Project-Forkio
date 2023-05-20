@@ -101,6 +101,9 @@
     .reviews-wrapper {
         width: 100%;
     }
+    .reviews-section {
+        height: 900px;
+    }
     .reviews {
         flex-flow: row wrap;
         justify-content: space-around;
@@ -270,5 +273,8 @@
     }
     .app__reviews {
         height: 675px;
+    }
+    .reviews-section {
+        height: 750px;
     }
 }
