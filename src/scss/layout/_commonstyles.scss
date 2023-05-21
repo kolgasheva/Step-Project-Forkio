@@ -10,6 +10,7 @@ body {
     min-width: 320px;
     @include center;
     padding: 0 10px;
+    max-width: 1200px;
 }
 
 .section-title {
@@ -18,3 +19,4 @@ body {
     @include center;
     text-align: center;
 }
+
