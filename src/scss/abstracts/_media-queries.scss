@@ -143,7 +143,9 @@
         width: 100%;
     }
     .reviews-section {
-        height: 1021px;
+        &::before {
+            height: 90%;
+        }
     }
     .app-reviews__title {
         padding: 85px 20px 80px;
@@ -164,14 +166,12 @@
     .reviews__description {
         width: 100%;
         text-align: center;
+
     }
     .app__reviews__paragraph {
         max-width: 700px;
         text-align: center;
         margin: 30px auto 0;
-    }
-    .app__reviews {
-        height: 780px;
     }
 }
 
@@ -355,10 +355,17 @@
     .reviews-wrapper {
         width: 87%;
         max-width: 1200px;
+        // padding-bottom: 50px;
     }
     .reviews {
         justify-content: space-between;
         width: 100%;
+    }
+    .reviews-section {
+        &::before {
+            height: 95%;
+            background-position: ;
+        }
     }
     .app-reviews__title {
         padding: 100px 20px 80px;
@@ -377,11 +384,5 @@
     }
     .reviews-section hr {
         width: 70%;
-    }
-    .app__reviews {
-        height: 675px;
-    }
-    .reviews-section {
-        height: 750px;
     }
 }
