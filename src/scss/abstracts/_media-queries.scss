@@ -102,7 +102,10 @@
         width: 100%;
     }
     .reviews-section {
-        height: 900px;
+        height: 1020px;
+    }
+    .app-reviews__title {
+        padding: 85px 20px 80px;
     }
     .reviews {
         flex-flow: row wrap;
@@ -115,7 +118,6 @@
     }
     .rewiews__review {
         flex-basis: 45.6%;
-        // max-width: 200px;
 
     }
     .reviews__description {
@@ -251,10 +253,14 @@
     //reviews section 
     .reviews-wrapper {
         width: 87%;
+        max-width: 1200px;
     }
     .reviews {
         justify-content: space-between;
         width: 100%;
+    }
+    .app-reviews__title {
+        padding: 100px 20px 80px;
     }
     .rewiews__review {
         flex-basis: 27%;
