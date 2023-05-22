@@ -220,12 +220,12 @@
         justify-content: flex-end;
         align-items: center;
         row-gap: 30px;
-        column-gap: 25px;
+        column-gap: 5%;
         padding: 0 0 94px;
         overflow-x: hidden;
 
         &__item {
-            width: 41.5%;
+            width: 44%;
             max-width: 257px;
             margin-left: 0;
             margin-right: 0;
@@ -236,7 +236,7 @@
         }
 
         &__item--agency {
-            width: 53%;
+            width: 51%;
             max-width: 299px;
         }
 
