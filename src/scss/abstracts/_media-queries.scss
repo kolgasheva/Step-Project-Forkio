@@ -173,6 +173,87 @@
         text-align: center;
         margin: 30px auto 0;
     }
+    .pricing {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            background-image: url("../img/Layer 2 1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+    }
+
+    .pricing__title {
+        font-size: 42px;
+        line-height: 44px;
+        margin-bottom: 0;
+        position: relative;
+        top: 58px;
+        padding-left: 15px;
+
+    }
+
+    .content-pricing {
+        width: 100%;
+        padding: 0;
+        position: relative;
+        z-index: 2;
+        padding: 0 10px;
+    }
+
+
+    .container-pricing {
+        box-sizing: border-box;
+        max-width: 581px;
+        margin-top: 97px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        row-gap: 30px;
+        column-gap: 5%;
+        padding: 0 0 94px;
+        overflow-x: hidden;
+
+        &__item {
+            width: 44%;
+            max-width: 257px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        &__text {
+            line-height: 18px;
+        }
+
+        &__item--agency {
+            width: 51%;
+            max-width: 299px;
+        }
+
+        &__text--agency {
+            line-height: 18px;
+        }
+
+        &__item:last-child {
+            margin-bottom: 0;
+
+        }
+
+        &__purchase-btn--students {
+            margin-bottom: 37px;
+        }
+
+    }
 }
 
 @media (min-width: $desktop) {
@@ -339,7 +420,6 @@
     margin-top: 0;
     grid-column: 3;
     grid-row: 2/ 4;
-    //height: auto;
     display: flex;
     align-items: center;
 }
@@ -347,15 +427,12 @@
 .advantages__img {
     max-width: 615px;
     width: auto;
-   // min-height: 90%;
     left: 0;
 }
 
-    //reviews section 
     .reviews-wrapper {
         width: 87%;
         max-width: 1200px;
-        // padding-bottom: 50px;
     }
     .reviews {
         justify-content: space-between;
@@ -385,4 +462,59 @@
     .reviews-section hr {
         width: 70%;
     }
+    .pricing {
+        position: relative;
+        overflow-x: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/Layer 2 1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+           background-position: center;
+            z-index: 1;
+        }
+    }
+
+    .content-pricing {
+        width: 87%;
+        max-width: 1200px;
+    }
+
+    .pricing__title {
+        font-size: 48px;
+        line-height: 50px;
+        position: relative;
+        top: 83px;
+        padding-left: 0;
+    }
+    .content-pricing {
+        width: 100%;
+    }
+
+    .container-pricing {
+        margin-top: 144px;
+        max-width: 1137px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        column-gap: 15px;
+        row-gap: 0;
+        align-items: center;
+        padding-bottom: 77px;
+
+        &__item {
+            width: 24%;
+        }
+
+        &__item--agency {
+            width: 27.9%;
+        }
+    }
 }
+

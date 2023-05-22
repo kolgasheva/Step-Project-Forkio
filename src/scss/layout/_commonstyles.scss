@@ -2,6 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     height: 100%;
+    overflow-x: hidden;
 }
 
 .container {
@@ -19,4 +20,5 @@ body {
     @include center;
     text-align: center;
 }
+
 
